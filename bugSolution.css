@@ -1,0 +1,22 @@
+/* bugSolution.css */
+
+/* Instead of overly specific selectors like this (bug.css): */
+/* #myContainer .item.special .text { color: blue; } */
+
+/* Use more general and reusable classes: */
+.item {
+  color: black; /* Default color */
+}
+
+.special {
+  color: blue; /* Special color override */
+}
+
+/* Or even better using more semantically meaningful selectors and keeping CSS cleaner: */
+.item__text { /* Consider more semantically appropriate selectors  */
+  color: black;  
+}
+
+.item__text--special {
+  color: blue;
+}
